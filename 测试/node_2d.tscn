@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://b10xsikq10d5e"]
+
+[ext_resource type="PackedScene" uid="uid://cwpo5npp3n6gx" path="res://单位/测试1/测试1.tscn" id="1_q35x6"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="测试1" parent="." instance=ExtResource("1_q35x6")]
+
+[node name="测试2" parent="." instance=ExtResource("1_q35x6")]
+position = Vector2(702, 480)
