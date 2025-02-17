@@ -1,22 +1,25 @@
-[gd_scene load_steps=7 format=3 uid="uid://cwpo5npp3n6gx"]
+[gd_scene load_steps=9 format=3 uid="uid://cwpo5npp3n6gx"]
 
 [ext_resource type="Script" path="res://脚本/单位/测试1/测试1.gd" id="1_1mmfd"]
 [ext_resource type="Texture2D" uid="uid://df57thnc7nrm5" path="res://素材/单位/测试1/伽玛.png" id="1_mtngg"]
+[ext_resource type="Script" path="res://脚本/单位/测试1/机炮.gd" id="3_avays"]
 [ext_resource type="Script" path="res://脚本/单位/测试1/扫描范围.gd" id="3_gmdd2"]
+[ext_resource type="PackedScene" uid="uid://b2lixoey5u3y8" path="res://子弹/子弹原型.tscn" id="4_qepsr"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_ibj7i"]
-radius = 32.0156
+radius = 35.0
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_gctsk"]
-radius = 274.804
+radius = 325.0
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_y3j3e"]
-radius = 332.038
+radius = 350.0
 
 [node name="测试1" type="Area2D"]
 position = Vector2(500, 500)
 monitoring = false
 script = ExtResource("1_1mmfd")
+"自身类型" = 1
 
 [node name="本体形状" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_ibj7i")
@@ -26,6 +29,8 @@ texture = ExtResource("1_mtngg")
 
 [node name="机炮" type="Area2D" parent="."]
 monitorable = false
+script = ExtResource("3_avays")
+"子弹" = ExtResource("4_qepsr")
 
 [node name="机炮射程" type="CollisionShape2D" parent="机炮"]
 position = Vector2(0, -20)

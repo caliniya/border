@@ -13,7 +13,9 @@ config_version=5
 config/name="border"
 run/main_scene="res://界面/标题.tscn"
 config/features=PackedStringArray("4.3", "Mobile")
+boot_splash/bg_color=Color(0, 0, 0, 1)
 config/icon="res://icon.svg"
+boot_splash/show_image=false
 
 [display]
 
