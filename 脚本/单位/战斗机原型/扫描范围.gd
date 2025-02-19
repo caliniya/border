@@ -15,12 +15,12 @@ func  单位进入(area:Area2D) -> void:
 		pass
 	else :
 		敌人列表.append(area)
-		area.被发现 = true
+		area.被锁定 = true
 		pass
 		
 func  单位离开(area:Area2D) -> void:
 	if area.自身阵营 == 自身阵营 and area.自身类型 == 类型.子弹:
 		pass
 	else :
-		area.被发现 = false
+		area.被锁定 = false
 		敌人列表.erase(area)

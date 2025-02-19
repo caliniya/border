@@ -8,8 +8,8 @@ enum 类型 {战舰 , 战斗机 , 子弹}
 @export var 自身阵营 = 阵营.蓝队
 @export var 血量 := 1000
 @export var 自身类型 := 类型.战舰
-@export var 被发现 := false
+@export var 被锁定 := false
 
 func  _process(delta: float) -> void:
-	if 被发现 == true:
+	if 被锁定 == true:
 		pass

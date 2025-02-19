@@ -1,12 +1,3 @@
-[gd_scene load_steps=2 format=3 uid="uid://b10xsikq10d5e"]
-
-[ext_resource type="PackedScene" uid="uid://cwpo5npp3n6gx" path="res://单位/测试1/测试1.tscn" id="1_d6415"]
+[gd_scene format=3 uid="uid://b10xsikq10d5e"]
 
 [node name="Node2D" type="Node2D"]
-
-[node name="测试1" parent="." instance=ExtResource("1_d6415")]
-"自身阵营" = 1
-
-[node name="测试2" parent="." instance=ExtResource("1_d6415")]
-position = Vector2(491, 745)
-rotation = -1.52716

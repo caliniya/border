@@ -17,6 +17,10 @@ boot_splash/bg_color=Color(0, 0, 0, 1)
 config/icon="res://icon.svg"
 boot_splash/show_image=false
 
+[debug]
+
+shapes/collision/shape_color=Color(0, 0.6, 0.701961, 0.145098)
+
 [display]
 
 window/size/viewport_width=2000
